@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+   
+    <title>Crud system</title>
+  </head>
+ <body>
+<div class="crud">
+ <div class="container">
+    <h1>Crud</h1>
+    <p>crud mangement system</p>
+ </div>
+</div>
+<!-- start input -->
+
+
+<div class="input">
+  <div class="container">
+    <input type="text" placeholder="title" id="textt">
+    <div class="price">
+      <!-- onkeyup == as you write value  -->
+      <input onkeyup="getTotal()" type="number" id="price" placeholder="price">
+      <input onkeyup="getTotal()" type="number" id="taxes" placeholder="taxs">
+      <input onkeyup="getTotal()"type="number" id="ads" placeholder="ads">
+      <input onkeyup="getTotal()" type="number" id="discount" placeholder="discount">
+      <small id="total"></small>
+    </div>
+    <input type="number" placeholder="count" id="count">
+    <input type="text" placeholder="category" id="category">
+   <button id="submit">create</button>
+
+  </div>
+</div>
+
+<!-- end input -->
+
+<div class="search_title">
+  <input onkeyup="search_data(this.value)" type="text" id="search" placeholder="search">
+  <div class="search_by">
+    <button id="title" onclick="searchmood(this.id)">search by title </button>
+    <button id="category" onclick="searchmood(this.id)">search by category </button>
+  </div>
+</div>
+<!-- start table -->
+<table>
+  <tr>
+    <th>id</th>
+    <th>title</th>
+    <th>price</th>
+    <th>taxes</th>
+    <th>ads</th>
+    <th>discount</th>
+    <th>category</th>
+    <th>total</th>
+    <th>update</th>
+    <th>delete</th>
+  </tr>
+  <tbody id="tbody">
+    <!-- <tr>
+      <td>1</td>
+      <td>oppo</td>
+      <td>2000</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td><button id="update">update</button></td>
+      <td><button id="delte">delete</button></td>
+     
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>oppo</td>
+      <td>2000</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td><button id="update">update</button></td>
+      <td><button id="delte">delete</button></td>
+     
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>oppo</td>
+      <td>2000</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td><button id="update">update</button></td>
+      <td><button id="delte">delete</button></td>
+     
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>oppo</td>
+      <td>2000</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td><button id="update">update</button></td>
+      <td><button id="delte">delete</button></td>
+     
+    </tr> -->
+  </tbody>
+</table>
+<!-- end table -->
+<button id="delete_all" onclick="delete_all(i)">delete</button>
+  <script src="crud.js"></script>
+ </body>
+ 
+</html>

@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #222;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+.crud {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.input {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+ input {
+  height: 30px;
+  padding: 5px;
+  margin: 10px;
+  background-color: #333;
+  outline: none;
+  color: #fff;
+}
+
+
+ button {
+  height:35px;
+  padding: 5px;
+  margin: 10px;
+  background-color: #333;
+  outline: none;
+  color: #fff;
+  border-radius:20px ;
+  cursor: pointer;
+  background-color: blueviolet;
+  transition: 0.5s;
+  
+}
+ button:hover{
+    background-color: rgb(90, 17, 158);
+    letter-spacing: 2px;
+}
+ input:focus{
+    background-color: #000;
+
+}
+ #total{
+    background-color: rgb(180, 5, 5);
+    padding: 5px;
+ }
+#total::before{
+    content: 'total: ';
+}
+.search_title{
+    width: 80%;
+  margin: auto;
+  text-align: center;
+}
+.search_title input{
+    width: 96%;
+    padding: 5px;
+}
+.search_title .search_by  button{
+    width:45%;
+}
+.search_by{
+    display: flex;
+    justify-content: space-between;
+}
+table{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+table button{
+    width: 100px;
+}
+table th{
+    text-transform: uppercase;
+}
+th,td{
+    padding: 5px;
+}
